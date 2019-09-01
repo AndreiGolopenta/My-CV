@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>
+  Autoplay settings
+</h1>
+<div mat-dialog-content>
+  <p>
+    Insert a number in seconds for autoplay.
+    Press Esc to stop autoplay.
+  </p>
+  <mat-form-field class="example-full-width">
+    <input 
+      matInput 
+      placeholder="Autoplay interval" 
+      type="number"
+      #inputSeconds>
+      <mat-hint>Seconds</mat-hint>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button 
+  mat-raised-button 
+    (click)="onNoClick()">
+    Cancel
+  </button>
+  <button 
+    mat-raised-button
+    mat-dialog-close
+    cdkFocusInitial
+    (click)="activateAutoplay(inputSeconds.value)">
+    Set Autoplay
+  </button>
+</div>

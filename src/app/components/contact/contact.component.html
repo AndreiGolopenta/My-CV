@@ -1,0 +1,29 @@
+<div>
+  <agm-map 
+    [latitude]="lat" 
+    [longitude]="lng"
+    [zoom]="zoom">
+    <agm-marker 
+      [latitude]="latMarker" 
+      [longitude]="lngMarker">
+    </agm-marker>
+  </agm-map>
+  <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Contact</mat-card-title>
+        <mat-card-subtitle>Andrei Golopenta</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          <mat-list role="list">
+            <mat-list-item 
+              *ngFor="let contact of contactInfo"
+              role="listitem">
+              <i class="material-icons">{{ contact.icon }}</i>
+              <span class="data">{{ contact.data }}</span>
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,12 @@
+.example-full-width {
+  width: 100%;
+}
+
+button {
+  background: #ba68c8;
+  color: #ffffff;
+  &:focus {
+    background: #9C27B0;
+    color: #FFFFFF;
+  }
+}

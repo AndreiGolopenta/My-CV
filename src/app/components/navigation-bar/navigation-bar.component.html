@@ -1,0 +1,41 @@
+<mat-card class="card">
+  <mat-button-toggle-group 
+    appearance="legacy" 
+    name="fontStyle" 
+    aria-label="Font Style" 
+    [value]="buttonValue">
+    <mat-button-toggle 
+      value="/"
+      routerLink="/">
+      Home
+    </mat-button-toggle>
+    <mat-button-toggle 
+      value="/work-education"
+      routerLink="/work-education">
+      Work / Education
+    </mat-button-toggle>
+    <mat-button-toggle 
+      value="/skills"
+      routerLink="/skills">
+      Skills
+    </mat-button-toggle>
+    <mat-button-toggle 
+      value="/projects"
+      routerLink="/projects">
+      Projects
+    </mat-button-toggle>
+    <mat-button-toggle 
+      value="/contact"
+      routerLink="/contact">
+      Contact
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+  <button 
+    mat-stroked-button 
+    color="accent" 
+    class="autoplay"
+    (click)="autoplayOnOff()"
+    [ngStyle]="{ background: autoplayStatus ? '#9C27B0' : '#BA68C8' }">
+    Autoplay
+  </button>
+</mat-card>

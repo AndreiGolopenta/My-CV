@@ -1,0 +1,18 @@
+mat-grid-list {
+  background: #eeeeee;
+  .grid-header {
+    position: relative;
+    h2 {
+      position: absolute;
+      bottom: -15px;
+    }
+  }
+  .grid-content {
+    .container {
+      position: absolute;
+      top: 20px;
+      width: 90%;
+      height: 85%;
+    }
+  }
+}

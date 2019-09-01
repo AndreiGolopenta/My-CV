@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  .mat-button-toggle {
+    background: #BA68C8;
+    color: #FFFFFF;
+  }
+  
+  .mat-button-toggle-checked {
+    background: #9C27B0;
+    color: #FFFFFF;
+  }
+  .autoplay {
+    position: absolute;
+    right: 15px;
+    color: #FFFFFF;
+  }
+}
+
+

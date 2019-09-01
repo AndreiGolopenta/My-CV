@@ -1,0 +1,29 @@
+div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  color: #ffffff;
+  .cursor {
+    position: relative;
+    top: 4px;
+    left: 2px;
+    width: 4px;
+    height: 33px;
+    background: #ffffff;
+    display: inline-block;
+    animation: fadeInFadeOut ease-in-out;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fadeInFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}

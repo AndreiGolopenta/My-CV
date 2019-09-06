@@ -1,0 +1,12 @@
+.mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+  button {
+    background: #BA68C8;
+    color: #FFFFFF;
+    &:focus {
+      background: #9C27B0;
+    }
+  }
+}

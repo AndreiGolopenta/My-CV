@@ -1,15 +1,18 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { scale} from '../../animations/route-animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  animations: [scale]
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
   string: string = '';
   counter: number = 0;
   interval: any;
+  logoScale: boolean = false;
 
   dataBase: string[] = [
     '', '', '', '', '', '', 'a', 'm', ' ', 'A', 'n', 'd', 'r', 'e', 'i', '.', '', '', '', '', '', '',
@@ -65,4 +68,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     clearInterval(this.interval);
   }
+
+  animate() {
+    this.logoScale = !this.logoScale
+  }
+
 }

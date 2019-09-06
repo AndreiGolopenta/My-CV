@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 export class NavigationBarComponent implements OnInit, OnChanges {
 
   buttonValue: string;
+  gitHubLogo: string[] = ['assets/GitHub-logo/GitHub.png', 'assets/GitHub-logo/GitHub-selected.png']
+  logoIndex: number = 0;
 
   @Input()
   currentRoute: number;
@@ -31,6 +33,10 @@ export class NavigationBarComponent implements OnInit, OnChanges {
 
   autoplayOnOff() {
     this.autoplay.emit();
+  }
+
+  changeLogo(value: string) {
+    value === 'select' ? this.logoIndex = 1 : this.logoIndex = 0;
   }
 
 }

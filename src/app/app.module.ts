@@ -34,6 +34,7 @@ import { WorkEducationComponent } from './components/work-education/work-educati
 import { DialogAutoplayComponent } from './components/dialog-autoplay/dialog-autoplay.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { AutoplayMessageComponent } from './components/autoplay-message/autoplay-message.component';
+import { ProjectScreenshotsComponent } from './components/project-screenshots/project-screenshots.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'homePage'} },
@@ -55,7 +56,8 @@ const routes: Routes = [
     WorkEducationComponent,
     DialogAutoplayComponent,
     ProjectCardComponent,
-    AutoplayMessageComponent
+    AutoplayMessageComponent,
+    ProjectScreenshotsComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +81,8 @@ const routes: Routes = [
   bootstrap: [AppComponent],
   entryComponents: [
     DialogAutoplayComponent,
-    AutoplayMessageComponent
+    AutoplayMessageComponent,
+    ProjectScreenshotsComponent
   ]
 })
 export class AppModule {}

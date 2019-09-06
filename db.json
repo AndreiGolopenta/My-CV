@@ -6,7 +6,9 @@
       "subtitle": "Angular",
       "image": [
         "assets/google-maps-api/image1.png",
-        "assets/google-maps-api/image2.png"
+        "assets/google-maps-api/image2.png",
+        "assets/google-maps-api/image3.png",
+        "assets/google-maps-api/image4.png"
       ],
       "content": "This application let the user to view a list of hotels in an area, interacting with markers on the map or titles from the list to get info. Also a search function is available."
     },
@@ -15,8 +17,11 @@
       "title": "Music Player",
       "subtitle": "jQuery",
       "image": [
+        "assets/music-player/image1.png",
         "assets/music-player/image2.png",
-        "assets/music-player/musicPlayerImage1.jpeg"
+        "assets/music-player/image3.png",
+        "assets/music-player/image4.png",
+        "assets/music-player/image5.png"
       ],
       "content": "This is a music player with basic functions. Shuffle and repeat features are also disponible. Some other feature is the search from the playlist. "
     },
@@ -27,7 +32,10 @@
       "image": [
         "assets/crud-app/image1.png",
         "assets/crud-app/image2.png",
-        "assets/crud-app/image3.png"
+        "assets/crud-app/image3.png",
+        "assets/crud-app/image4.png",
+        "assets/crud-app/image5.png",
+        "assets/crud-app/image6.png"
       ],
       "content": "This is a simple CRUD application with Angular Material styling elements. Other features like searching and view data after category filters are available."
     },

@@ -30,6 +30,16 @@
       Contact
     </mat-button-toggle>
   </mat-button-toggle-group>
+  <a 
+    href="https://github.com/AndreiGolopenta">
+    <img 
+    [src]="gitHubLogo[logoIndex]"
+    class="logo"
+    (mouseenter)="changeLogo('select')"
+    (mouseleave)="changeLogo('')"
+    href="https://github.com/AndreiGolopenta" />
+  </a>
+  
   <button 
     mat-stroked-button 
     color="accent" 

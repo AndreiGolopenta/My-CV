@@ -17,15 +17,15 @@
 </div>
 <div mat-dialog-actions>
   <button 
-  mat-raised-button 
-    (click)="onNoClick()">
-    Cancel
-  </button>
-  <button 
     mat-raised-button
     mat-dialog-close
     cdkFocusInitial
     (click)="activateAutoplay(inputSeconds.value)">
     Set Autoplay
+  </button>
+  <button 
+    mat-raised-button 
+    (click)="onNoClick()">
+    Cancel
   </button>
 </div>

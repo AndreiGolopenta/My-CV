@@ -19,11 +19,4 @@ export class ProjectsComponent implements OnInit {
     });
   }
 
-  enter(event) {
-    console.log('mouse enter');
-  }
-
-  leave(event) {
-    console.log('mouse leave');
-  }
 }

@@ -56,7 +56,7 @@ export class FinalProjectComponent implements OnInit {
   handleAutoplay() {
     const dialogRef = this.dialog.open(DialogAutoplayComponent, { width: '350px' });
     dialogRef.componentInstance.autoplayAction.subscribe((data: number) => {
-      dialogRef.afterClosed().subscribe(result => {
+      dialogRef.afterClosed().subscribe(() => {
         this.checkCurentRoute();
         
         this._snackBar.openFromComponent(AutoplayMessageComponent);

@@ -6,7 +6,8 @@ import {
   group, 
   animate, 
   animateChild,
-  state
+  state,
+  keyframes
  } from '@angular/animations';
 
 
@@ -90,5 +91,35 @@ export const fade =
     ]),
   ]);
 
-    
+
+export const cardTransition = 
+  trigger('contactTransition', [
+    state('initial', style({
+      transform: 'translateX(700px)'
+    })),
+    state('final', style({
+      transform: 'translateX(0px)'
+    })),
+    transition('initial => final', [
+      animate('1000ms ease-in-out', keyframes([
+        style({transform: 'translateX(700px)'}),
+        style({transform: 'translateX(-100px)'}),
+        style({transform: 'translateX(0)'})
+      ]))
+    ]),
+  ]);
+
+  export const fadeInOut = 
+    trigger('fadeInOut', [
+      state('initial', style({
+        opacity: 1
+      })),
+      state('final', style({
+        opacity: 0.7
+      })),
+      transition('initial <=> final', [
+        animate('400ms ease-in-out')
+      ])
+    ]);
+
 

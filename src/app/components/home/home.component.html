@@ -1,3 +1,20 @@
-<div>
-  <h1>Hey, I {{ string }}<span class="cursor"></span></h1>
-</div>
+<mat-grid-list cols="1" rowHeight="20vh" gutterSize="2px">
+  <mat-grid-tile rowspan="4" class="content">
+    <h1>Hey, I {{ string }}<span class="cursor"></span></h1>
+  </mat-grid-tile>
+  <mat-grid-tile class="logo">
+    <div 
+      [@scaleCard]="logoScale ? 'start' : 'stop'"
+      (mouseenter)="animate()"
+      (mouseleave)="animate()">
+      <a href="https://github.com/AndreiGolopenta">
+        <img 
+          src="assets/GitHub-logo/GitHub_Logo_White.png" 
+          class="logo-1" />
+        <img 
+          src="assets/GitHub-logo/GitHub-Mark-Light-64px.png" 
+          class="logo-2" />
+      </a>   
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

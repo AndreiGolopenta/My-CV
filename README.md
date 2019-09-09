@@ -8,7 +8,8 @@ This application is a presentation of my cv.
 * Angular Material
 
 __Screenshot__
--- will be added soon --
+
+![alt text](https://raw.githubusercontent.com/AndreiGolopenta/My-CV/master/src/assets/Screenshot.png)
 
 ## Requirements
 * JSON Server

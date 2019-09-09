@@ -1,0 +1,38 @@
+mat-card {
+  mat-card-header {
+    position: relative;
+    top: 12px;
+    .container-image {
+      position: absolute;
+      img {
+        width: 30px;
+      }
+    }
+    .title,
+    .subtitle {
+      position: relative;
+      left: 20px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    position: relative;
+    top: -7px;
+    li {
+      position: relative;
+      left: -30px;
+      padding: 4px;
+      .dot {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background: #9C27B0;;
+        border-radius: 3.5px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

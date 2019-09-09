@@ -1,0 +1,10 @@
+mat-grid-list {
+  .logo-container {
+    img {
+      height: 48%;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

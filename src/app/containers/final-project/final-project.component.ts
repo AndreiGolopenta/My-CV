@@ -10,6 +10,7 @@ import { myAnimation } from '../../animations/route-animations';
 import { DialogAutoplayComponent } from 'src/app/components/dialog-autoplay/dialog-autoplay.component';
 import { AutoplayMessageComponent } from '../../components/autoplay-message/autoplay-message.component';
 import { ProjectCard } from 'src/app/models/contact-interface';
+import { Logo } from 'src/app/models/logo-interface';
 
 @Component({
   selector: 'app-final-project',
@@ -18,8 +19,13 @@ import { ProjectCard } from 'src/app/models/contact-interface';
   animations: [myAnimation],
 })
 export class FinalProjectComponent implements OnInit {
-
-  routes: string[] = ['/', '/work-education', '/skills', '/projects', '/contact'];
+  routes: string[] = [
+    '/',
+    '/work-education',
+    '/skills',
+    '/projects',
+    '/contact',
+  ];
   counter: number;
   intervalAutoplay: any;
   autoplayStatus: boolean = false;
@@ -29,7 +35,7 @@ export class FinalProjectComponent implements OnInit {
     public dialog: MatDialog,
     private projectService: FinalProjectService,
     private _snackBar: MatSnackBar
-    ) {}
+  ) {}
 
   ngOnInit() {
     this.projectService.getProjects().subscribe((data: ProjectCard[]) => {
@@ -42,7 +48,11 @@ export class FinalProjectComponent implements OnInit {
         this.autoplayStatus = false;
         this._snackBar.dismiss();
       }
-    }
+    };
+
+    this.projectService.getLogos().subscribe((data: Logo[]) => {
+      this.projectService.availableLogos(data);
+    });
   }
 
   prepareRoute(outlet: RouterOutlet) {
@@ -54,11 +64,13 @@ export class FinalProjectComponent implements OnInit {
   }
 
   handleAutoplay() {
-    const dialogRef = this.dialog.open(DialogAutoplayComponent, { width: '350px' });
+    const dialogRef = this.dialog.open(DialogAutoplayComponent, {
+      width: '350px',
+    });
     dialogRef.componentInstance.autoplayAction.subscribe((data: number) => {
       dialogRef.afterClosed().subscribe(() => {
         this.checkCurentRoute();
-        
+
         this._snackBar.openFromComponent(AutoplayMessageComponent);
 
         this.intervalAutoplay = setInterval(() => this.autoplay(), data * 1000);
@@ -76,12 +88,8 @@ export class FinalProjectComponent implements OnInit {
   }
 
   autoplay() {
-    this.counter === 5 ? this.counter = 0 : null;
+    this.counter === 5 ? (this.counter = 0) : null;
     this.router.navigate([this.routes[this.counter]]);
     this.counter++;
   }
-  
 }
-
-
-

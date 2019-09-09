@@ -1,0 +1,19 @@
+<div *ngFor="let skill of skills">
+  <div
+    class="card"
+    matRipple
+    [@skillAnimate]="skill.animate ? 'final' : 'initial'"
+    (mouseenter)="animationStart(skill)"
+    (mouseleave)="animationStop(skill)"
+    [ngStyle]="{
+      cursor:
+        skill.name === 'Angular' || skill.name === 'React'
+          ? 'pointer'
+          : 'default'
+    }"
+    (click)="changeCard(skill)">
+    <span class="text">
+      {{ skill.name }}
+    </span>
+  </div>
+</div>

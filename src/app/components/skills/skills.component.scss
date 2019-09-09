@@ -1,7 +1,25 @@
-div {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+mat-grid-list {
   background: #eeeeee;
+}
+mat-grid-tile {
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    h2 {
+      position: relative;
+      top: 20px;
+    }
+  }
+  .logo {
+    width: 60vw;
+    height: 16vh;
+    margin-bottom: 50px;
+  }
+  app-skill-detail-card {
+    position: relative;
+    left: 20px;
+  }
 }

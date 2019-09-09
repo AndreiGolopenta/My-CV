@@ -1,0 +1,10 @@
+<mat-grid-list [cols]="skills.length" rowHeight="100%">
+  <ng-container *ngFor="let logo of skills">
+    <mat-grid-tile class="logo-container">
+      <img 
+        [src]="logo.url" 
+        [alt]="logo.name" 
+        [@scaleLogo]="logo.animate ? 'start' : 'stop'" />
+    </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>

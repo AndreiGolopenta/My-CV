@@ -1,3 +1,28 @@
-<div>
-  <h1>skills works!</h1>
-</div>
+<mat-grid-list cols="2" rowHeight="20vh">
+  <mat-grid-tile colspan="2">
+    <div class="title">
+      <h2>Skills</h2>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile 
+    colspan="2" 
+    rowspan="3">
+    <app-skills-list 
+      [skills]="logos" 
+      (animate)="activateAnimation($event)"
+      (changeSkillCard)="handleChange($event)">
+    </app-skills-list>
+    <app-skill-detail-card
+      [data]="skillData"
+      [@skillCardAnimation]="changeSkillDataAnimation ? 'finish' : 'start'">
+    </app-skill-detail-card>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <div class="logo">
+      <app-skills-logos 
+        [skills]="logos">
+      </app-skills-logos>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+

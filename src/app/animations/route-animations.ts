@@ -75,6 +75,19 @@ export const scale =
     ]),
   ]);
 
+export const scaleLogo = 
+trigger('scaleLogo', [
+  state('start', style({
+    transform: 'scale(1.22)'
+  })),
+  state('stop', style({
+    transform: 'scale(1)'
+  })),
+  transition('start <=> stop', [
+    animate('300ms ease-in-out')
+  ]),
+]);
+
 
 export const fade =
   trigger('fadeAnimation', [
@@ -109,17 +122,49 @@ export const cardTransition =
     ]),
   ]);
 
-  export const fadeInOut = 
-    trigger('fadeInOut', [
-      state('initial', style({
-        opacity: 1
-      })),
-      state('final', style({
-        opacity: 0.7
-      })),
-      transition('initial <=> final', [
-        animate('400ms ease-in-out')
-      ])
-    ]);
+export const fadeInOut = 
+  trigger('fadeInOut', [
+    state('initial', style({
+      opacity: 1
+    })),
+    state('final', style({
+      opacity: 0.7
+    })),
+    transition('initial <=> final', [
+      animate('400ms ease-in-out')
+    ])
+  ]);
 
+export const skillsAnimation = 
+  trigger('skillAnimate', [
+    state('initial', style({
+      width: '102px'
+    })),
+    state('final', style({
+      width: '130px',
+      textAlign: 'center',
+      boxShadow: '0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)'
+    })),
+    transition('initial <=> final', [
+      animate('200ms ease-in-out')
+    ])
+  ]);
+
+export const skillCardAnimation =
+  trigger('skillCardAnimation', [
+    state('start', style({
+      left: '20px'
+    })),
+    state('finish', style({
+      left: '20px'
+    })),
+    transition('start => finish', [
+      animate('800ms ease-in-out', keyframes([
+        style({left: '20px'}),
+        style({left: '1400px'}),
+        style({left: '0px'}),
+        style({left: '20px'})
+      ]))
+    ])
+  ]);
 

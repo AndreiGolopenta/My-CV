@@ -4,7 +4,9 @@
   [autoplayStatus]="autoplayStatus"
   (autoplay)='handleAutoplay()'>
 </app-navigation-bar>
-<div [@routeAnimations]="prepareRoute(outlet)" class="outlet">
+<div 
+  [@routeAnimations]="prepareRoute(outlet)" 
+  class="outlet">
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 

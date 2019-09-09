@@ -49,5 +49,74 @@
       ],
       "content": "This is a radio with 5 radio stations. Clock and alarm are also available. After alarm is fired you will be able to snooze it for 1 minute or stop it."
     }
+  ],
+  "logo": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "url": "assets/skills-logos/html.png",
+      "animate": false
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "url": "assets/skills-logos/css.png",
+      "animate": false
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "url": "assets/skills-logos/javascript.png",
+      "animate": false
+    },
+    {
+      "id": 4,
+      "name": "Angular",
+      "url": "assets/skills-logos/angular.png",
+      "listLogo": "assets/skills-logos/angularLogo.png",
+      "animate": false,
+      "list": [
+        "Application structure, modular architecture and anatomy",
+        "Smart/Dumb component architecture",
+        "Sharing data between Angular components",
+        "Template Binding Syntax",
+        "Component Lifecycle Hooks",
+        "Component Routing",
+        "Custom Pipes",
+        "Forms and Validation / Reactive Forms and Validators",
+        "Http and Observable Services"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "GIT",
+      "url": "assets/skills-logos/git.png",
+      "animate": false
+    },
+    {
+      "id": 6,
+      "name": "SCSS",
+      "url": "assets/skills-logos/scss.png",
+      "animate": false
+    },
+    {
+      "id": 7,
+      "name": "jQuery / Ajax",
+      "url": "assets/skills-logos/jquery.png",
+      "animate": false
+    },
+    {
+      "id": 8,
+      "name": "React",
+      "url": "assets/skills-logos/react.png",
+      "listLogo": "assets/skills-logos/reactLogo.png",
+      "animate": false,
+      "list": [
+        "Basic knowledge about application structure",
+        "How to manage props, state, sharing data between components",
+        "The component lifecycle",
+        "Template Binding Syntax"
+      ]
+    }
   ]
 }

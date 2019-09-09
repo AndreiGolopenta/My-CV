@@ -18,6 +18,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatRippleModule } from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 
@@ -35,6 +37,9 @@ import { DialogAutoplayComponent } from './components/dialog-autoplay/dialog-aut
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { AutoplayMessageComponent } from './components/autoplay-message/autoplay-message.component';
 import { ProjectScreenshotsComponent } from './components/project-screenshots/project-screenshots.component';
+import { SkillsListComponent } from './components/skills-list/skills-list.component';
+import { SkillsLogosComponent } from './components/skills-logos/skills-logos.component';
+import { SkillDetailCardComponent } from './components/skill-detail-card/skill-detail-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'homePage'} },
@@ -57,7 +62,10 @@ const routes: Routes = [
     DialogAutoplayComponent,
     ProjectCardComponent,
     AutoplayMessageComponent,
-    ProjectScreenshotsComponent
+    ProjectScreenshotsComponent,
+    SkillsListComponent,
+    SkillsLogosComponent,
+    SkillDetailCardComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +83,9 @@ const routes: Routes = [
     MatInputModule,
     MatListModule,
     MatGridListModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDividerModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent],

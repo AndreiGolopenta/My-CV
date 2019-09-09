@@ -1,0 +1,23 @@
+<ng-container *ngIf="data">
+  <mat-card>
+    <mat-card-header>
+      <div class="container-image">
+        <img matListAvatar 
+          [src]="data.listLogo" />
+      </div>
+      <mat-card-title 
+        class="title">
+        {{ data.name }}
+      </mat-card-title>
+      <mat-card-subtitle 
+        class="subtitle">
+        What i know to do
+      </mat-card-subtitle>
+    </mat-card-header>
+    <ul>
+      <li *ngFor="let item of data.list">
+        <span class="dot"></span>{{ item }}
+      </li>
+    </ul>
+  </mat-card>
+</ng-container>

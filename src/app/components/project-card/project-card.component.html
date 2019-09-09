@@ -8,7 +8,9 @@
     <mat-card-title>{{ detail.title }}</mat-card-title>
     <mat-card-subtitle>{{ detail.subtitle }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="image" [@fadeAnimation]="fadeInOut ? 'start' : 'stop'" />
+  <img mat-card-image 
+    [src]="image" 
+    [@fadeAnimation]="fadeInOut ? 'start' : 'stop'" />
   <mat-card-content>
     <p>{{ detail.content }}</p>
   </mat-card-content>

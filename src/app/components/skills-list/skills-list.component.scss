@@ -1,0 +1,30 @@
+div {
+  position: relative;
+  width: 180px;
+  height: 43px;
+  .card {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    background: #ffffff;
+    padding: 6px;
+    display: flex;
+    align-content: center;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    .text {
+      background: #ba68c8;
+      color: #ffffff;
+      padding: 6px;
+      font-size: 14px;
+      width: 100%;
+      border-radius: 2px;
+      line-height: 14px;
+      &:hover {
+        background: #9c27b0;
+      }
+    }
+  }
+}

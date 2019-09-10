@@ -11,6 +11,7 @@ import { DialogAutoplayComponent } from 'src/app/components/dialog-autoplay/dial
 import { AutoplayMessageComponent } from '../../components/autoplay-message/autoplay-message.component';
 import { ProjectCard } from 'src/app/models/contact-interface';
 import { Logo } from 'src/app/models/logo-interface';
+import { Titles } from 'src/app/models/title-interface';
 
 @Component({
   selector: 'app-final-project',
@@ -53,6 +54,10 @@ export class FinalProjectComponent implements OnInit {
     this.projectService.getLogos().subscribe((data: Logo[]) => {
       this.projectService.availableLogos(data);
     });
+
+    this.projectService.getTitles().subscribe((data: Titles) => {
+      this.projectService.availableTitles(data);
+    })
   }
 
   prepareRoute(outlet: RouterOutlet) {

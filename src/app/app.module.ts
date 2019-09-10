@@ -20,6 +20,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatRippleModule } from '@angular/material/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 
@@ -87,7 +88,8 @@ const routes: Routes = [
     MatGridListModule,
     MatSnackBarModule,
     MatDividerModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

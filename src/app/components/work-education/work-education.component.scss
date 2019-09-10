@@ -1,7 +1,17 @@
-div {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+mat-grid-list {
   background: #eeeeee;
+  mat-grid-tile {
+    app-page-title {
+      position: absolute;
+      bottom: 0;
+    }
+    .content {
+      position: absolute;
+      top: 30px;
+      .example-tab-icon {
+        margin-right: 8px;
+      }
+    }
+  }
 }
+

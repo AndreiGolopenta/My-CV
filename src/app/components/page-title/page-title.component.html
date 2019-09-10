@@ -4,6 +4,9 @@
     [@animateTittle]="character.animate ? 'start' : 'stop'"
     (mouseenter)="titleAnimationStart(character)"
     (mouseleave)="titleAnimationStop(character)">
+    <ng-container *ngIf="character.char === ''">
+      	&#160;
+    </ng-container>
     {{ character.char }}
   </span>
 </h2>

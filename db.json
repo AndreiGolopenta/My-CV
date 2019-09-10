@@ -118,5 +118,218 @@
         "Template Binding Syntax"
       ]
     }
-  ]
+  ],
+  "title": {
+    "workEducation": [
+      {
+        "id": 1,
+        "char": "E",
+        "animate": false
+      },
+      {
+        "id": 2,
+        "char": "d",
+        "animate": false
+      },
+      {
+        "id": 3,
+        "char": "u",
+        "animate": false
+      },
+      {
+        "id": 4,
+        "char": "c",
+        "animate": false
+      },
+      {
+        "id": 5,
+        "char": "a",
+        "animate": false
+      },
+      {
+        "id": 6,
+        "char": "t",
+        "animate": false
+      },
+      {
+        "id": 7,
+        "char": "i",
+        "animate": false
+      },
+      {
+        "id": 8,
+        "char": "o",
+        "animate": false
+      },
+      {
+        "id": 9,
+        "char": "n",
+        "animate": false
+      },
+      {
+        "id": 10,
+        "char": "",
+        "animate": false
+      },
+      {
+        "id": 11,
+        "char": "/",
+        "animate": false
+      },
+      {
+        "id": 12,
+        "char": "",
+        "animate": false
+      },
+      {
+        "id": 13,
+        "char": "W",
+        "animate": false
+      },
+      {
+        "id": 14,
+        "char": "o",
+        "animate": false
+      },
+      {
+        "id": 15,
+        "char": "r",
+        "animate": false
+      },
+      {
+        "id": 16,
+        "char": "k",
+        "animate": false
+      },
+      {
+        "id": 17,
+        "char": "",
+        "animate": false
+      },
+      {
+        "id": 18,
+        "char": "e",
+        "animate": false
+      },
+      {
+        "id": 19,
+        "char": "x",
+        "animate": false
+      },
+      {
+        "id": 20,
+        "char": "p",
+        "animate": false
+      },
+      {
+        "id": 21,
+        "char": "e",
+        "animate": false
+      },
+      {
+        "id": 22,
+        "char": "r",
+        "animate": false
+      },
+      {
+        "id": 23,
+        "char": "i",
+        "animate": false
+      },
+      {
+        "id": 24,
+        "char": "e",
+        "animate": false
+      },
+      {
+        "id": 25,
+        "char": "n",
+        "animate": false
+      },
+      {
+        "id": 26,
+        "char": "c",
+        "animate": false
+      },
+      {
+        "id": 27,
+        "char": "e",
+        "animate": false
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "char": "S",
+        "animate": false
+      },
+      {
+        "id": 2,
+        "char": "k",
+        "animate": false
+      },
+      {
+        "id": 3,
+        "char": "i",
+        "animate": false
+      },
+      {
+        "id": 4,
+        "char": "l",
+        "animate": false
+      },
+      {
+        "id": 5,
+        "char": "l",
+        "animate": false
+      },
+      {
+        "id": 6,
+        "char": "s",
+        "animate": false
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "char": "P",
+        "animate": false
+      },
+      {
+        "id": 2,
+        "char": "r",
+        "animate": false
+      },
+      {
+        "id": 3,
+        "char": "o",
+        "animate": false
+      },
+      {
+        "id": 4,
+        "char": "j",
+        "animate": false
+      },
+      {
+        "id": 5,
+        "char": "e",
+        "animate": false
+      },
+      {
+        "id": 6,
+        "char": "c",
+        "animate": false
+      },
+      {
+        "id": 7,
+        "char": "t",
+        "animate": false
+      },
+      {
+        "id": 8,
+        "char": "s",
+        "animate": false
+      }
+    ]
+  }
 }

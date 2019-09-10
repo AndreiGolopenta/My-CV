@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Titles } from 'src/app/models/title-interface';
+import { FinalProjectService } from 'src/app/services/final-project.service';
 
 @Component({
   selector: 'app-work-education',
@@ -6,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-education.component.scss'],
 })
 export class WorkEducationComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit() {}
+  title: Title[];
+
+  constructor(private finalProjectService: FinalProjectService) {}
+
+  ngOnInit() {
+    this.finalProjectService.title.subscribe((data: Titles) => {
+      this.title = data.workEducation;
+    });
+  }
 }

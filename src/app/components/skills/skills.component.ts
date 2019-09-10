@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Logo } from 'src/app/models/logo-interface';
 import { FinalProjectService } from 'src/app/services/final-project.service';
 import { skillCardAnimation, animateTittle } from 'src/app/animations/route-animations';
-import { Title } from 'src/app/models/title-interface';
+import { Title, Titles } from 'src/app/models/title-interface';
 
 @Component({
   selector: 'app-skills',
@@ -16,14 +16,7 @@ export class SkillsComponent implements OnInit {
   skillData: Logo;
   changeSkillDataAnimation: boolean = false;
 
-  title: Title[] = [
-    {id: 1, char: 'S', animate: false},
-    {id: 1, char: 'k', animate: false},
-    {id: 1, char: 'i', animate: false},
-    {id: 1, char: 'l', animate: false},
-    {id: 1, char: 'l', animate: false},
-    {id: 1, char: 's', animate: false},
-  ];
+  title: Title[];
 
   constructor(private finalProjectService: FinalProjectService) {}
 
@@ -36,6 +29,9 @@ export class SkillsComponent implements OnInit {
         }
       });
     });
+    this.finalProjectService.title.subscribe((data: Titles) => {
+      this.title = data.skills;
+    })
   }
 
   activateAnimation(logo: Logo) {

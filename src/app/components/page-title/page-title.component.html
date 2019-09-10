@@ -1,0 +1,9 @@
+<h2>
+  <span
+    *ngFor="let character of title"
+    [@animateTittle]="character.animate ? 'start' : 'stop'"
+    (mouseenter)="titleAnimationStart(character)"
+    (mouseleave)="titleAnimationStop(character)">
+    {{ character.char }}
+  </span>
+</h2>

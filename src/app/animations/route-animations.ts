@@ -168,3 +168,26 @@ export const skillCardAnimation =
     ])
   ]);
 
+export const animateTittle = 
+  trigger('animateTittle', [
+    state('start', style({
+      transform: 'scaleY(1.7) translateY(-3px)'
+    })), 
+    state('stop', style({
+      transform: 'scaleY(1) translateY(0px)'
+    })),
+    transition('stop => start', [
+      animate('300ms ease-in-out', keyframes([
+        style({transform: 'scale(1) translateY(0px)', color: 'rgb(156, 39, 176)'}),
+        style({transform: 'scaleY(1.7) translateY(-3px)'}),
+      ]))
+    ]),
+    transition('start => stop', [
+      animate('300ms ease-in-out', keyframes([
+        style({transform: 'scaleY(0.5) translateY(-2px)'}),
+        style({transform: 'scaleX(1.4) translateY(-2px)'}),
+        style({transform: 'scaleY(1) translateY(0px)'}),
+      ]))
+    ])
+  ]);
+

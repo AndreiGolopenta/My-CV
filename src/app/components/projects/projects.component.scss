@@ -2,7 +2,7 @@ mat-grid-list {
   background: #eeeeee;
   .grid-header {
     position: relative;
-    h2 {
+    app-page-title {
       position: absolute;
       bottom: -15px;
     }

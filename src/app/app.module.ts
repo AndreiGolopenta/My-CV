@@ -40,6 +40,7 @@ import { ProjectScreenshotsComponent } from './components/project-screenshots/pr
 import { SkillsListComponent } from './components/skills-list/skills-list.component';
 import { SkillsLogosComponent } from './components/skills-logos/skills-logos.component';
 import { SkillDetailCardComponent } from './components/skill-detail-card/skill-detail-card.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'homePage'} },
@@ -65,7 +66,8 @@ const routes: Routes = [
     ProjectScreenshotsComponent,
     SkillsListComponent,
     SkillsLogosComponent,
-    SkillDetailCardComponent
+    SkillDetailCardComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,

@@ -42,6 +42,8 @@ import { SkillsListComponent } from './components/skills-list/skills-list.compon
 import { SkillsLogosComponent } from './components/skills-logos/skills-logos.component';
 import { SkillDetailCardComponent } from './components/skill-detail-card/skill-detail-card.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
+import { EducationTemplateComponent } from './components/education-template/education-template.component';
+import { WorkExperienceTemplateComponent } from './components/work-experience-template/work-experience-template.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'homePage'} },
@@ -68,7 +70,9 @@ const routes: Routes = [
     SkillsListComponent,
     SkillsLogosComponent,
     SkillDetailCardComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    EducationTemplateComponent,
+    WorkExperienceTemplateComponent
   ],
   imports: [
     BrowserModule,

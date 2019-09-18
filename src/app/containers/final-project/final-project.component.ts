@@ -12,6 +12,7 @@ import { AutoplayMessageComponent } from '../../components/autoplay-message/auto
 import { ProjectCard } from 'src/app/models/contact-interface';
 import { Logo } from 'src/app/models/logo-interface';
 import { Titles } from 'src/app/models/title-interface';
+import { EducationWork } from 'src/app/models/education-work-interface';
 
 @Component({
   selector: 'app-final-project',
@@ -57,6 +58,10 @@ export class FinalProjectComponent implements OnInit {
 
     this.projectService.getTitles().subscribe((data: Titles) => {
       this.projectService.availableTitles(data);
+    })
+
+    this.projectService.getPersonalData().subscribe((data: EducationWork) => {
+      this.projectService.availablePersonalData(data);
     })
   }
 

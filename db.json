@@ -331,5 +331,80 @@
         "animate": false
       }
     ]
+  },
+  "personalData": {
+    "education": [
+      {
+        "id": 1,
+        "fromYear": 2019,
+        "toYear": 2019,
+        "fromMounth": "May",
+        "toMounth": "September",
+        "school": "The Informal School of IT",
+        "specialization": "Web Development (JavaScript)"
+      },
+      {
+        "id": 2,
+        "fromYear": 2019,
+        "toYear": 2019,
+        "fromMounth": "February",
+        "toMounth": "April",
+        "school": "The Informal School of IT",
+        "specialization": "Intro in IT"
+      },
+      {
+        "id": 3,
+        "fromYear": 2006,
+        "toYear": 2010,
+        "fromMounth": "",
+        "toMounth": "",
+        "school": "The Faculty of Mechanics",
+        "specialization": "Civil, Industrial and Agricultural Constructions - Craiova - engineering"
+      },
+      {
+        "id": 4,
+        "fromYear": 2002,
+        "toYear": 2006,
+        "fromMounth": "",
+        "toMounth": "",
+        "school": "Calculation Techniques Operator",
+        "specialization": "Calculation Techniques Operator"
+      }
+    ],
+    "jobs": [
+      {
+        "id": 1,
+        "fromYear": 2011,
+        "toYear": 2013,
+        "fromMounth": "May",
+        "toMounth": "May",
+        "job": "S.C. Brazilian Marmura & Granit Impex S.R.L.",
+        "position": "Construction engineer",
+        "responsibilities": [
+          "Making price offers and presenting them to the clients",
+          "Taking measure at ordered works",
+          "Making execution orders for cutting the stones",
+          "Coordinate the works of bonding at interior and exterior of natural stone",
+          "Making drawings in Solidworks for different natural stone projects",
+          "Making invoices for executed works payment and cargo waybill",
+          "Delivery the granite /marble/ travertine orders",
+          "Collaborating and helping the workers for accomplishing the best result in work"
+        ]
+      },
+      {
+        "id": 2,
+        "fromYear": 2013,
+        "toYear": 2017,
+        "fromMounth": "May",
+        "toMounth": "February",
+        "job": "S.C. Regnico S.R.L.",
+        "position": "Construction engineer",
+        "responsibilities": [
+          "Coordination, tracking and checking the quality of the work in the building site",
+          "Collaboration with the supply service in order to have the necessary materials in the building site",
+          "Permanent collaboration with clients."
+        ]
+      }
+    ]
   }
 }

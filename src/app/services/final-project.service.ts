@@ -7,10 +7,12 @@ import { HttpClient } from '@angular/common/http';
 import { ProjectCard } from '../models/contact-interface';
 import { Logo } from '../models/logo-interface';
 import { Titles, Title } from '../models/title-interface';
+import { EducationWork } from '../models/education-work-interface';
 
 const PROJECTS_API = 'http://localhost:3000/projects';
 const LOGO_API = 'http://localhost:3000/logo';
 const TITLE_API = 'http://localhost:3000/title';
+const EDUCATION_WORK = 'http://localhost:3000/personalData';
 
 @Injectable({
   providedIn: 'root',
@@ -29,6 +31,10 @@ export class FinalProjectService {
 
   getTitles(): Observable<Titles> {
     return this.http.get<Titles>(TITLE_API);
+  }
+
+  getPersonalData(): Observable<EducationWork> {
+    return this.http.get<EducationWork>(EDUCATION_WORK);
   }
 
   private sendProjects = new BehaviorSubject([]);
@@ -53,6 +59,14 @@ export class FinalProjectService {
 
   availableTitles(title: Titles) {
     return this.sendTitle.next(title);
+  }
+
+  private sendPersonalData = new BehaviorSubject({education: [], jobs: []});
+
+  personalData: Observable<EducationWork> = this.sendPersonalData.asObservable();
+
+  availablePersonalData(personalData: EducationWork) {
+    return this.sendPersonalData.next(personalData);
   }
 
 }

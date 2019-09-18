@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="year">
+    <span class="fromYear"> {{ job.fromYear }} </span>
+    <span class="dividerYear">-</span>
+    <span class="toYear"> {{ job.toYear }} </span>
+    <span class="fromMounth"> {{ job.fromMounth }} </span>
+    <span class="toMounth"> {{ job.toMounth }} </span>
+    <span class="verticalLine"></span>
+  </div>
+  <div class="job-detail">
+    <span class="job"> {{ job.job }} </span>
+    <span class="position"> {{ job.position }} </span>
+    <span class="responsibilities">Responsibilities :</span>
+    <ul>
+      <li *ngFor="let item of job.responsibilities"> {{ item }} </li>
+    </ul>
+  </div>
+</div>
+
+

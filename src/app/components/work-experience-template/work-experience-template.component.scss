@@ -1,0 +1,87 @@
+.container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+  .year {
+    position: relative;
+    width: 25%;  
+    .fromYear, .toYear, .dividerYear {
+      font-size: 24px;
+    }
+    .fromYear {
+      position: absolute;
+      top: 20px;
+      left: 24px;
+    }
+    .toYear {
+      position: absolute;
+      top: 20px;
+      left: 105px;
+    }
+    .dividerYear {
+      position: absolute;
+      top: 20px;
+      left: 87px;
+    }
+    .fromMounth, .toMounth {
+      font-size: 13px;
+      color: #666;
+    }
+    .fromMounth {
+      position: absolute;
+      top: 5px;
+      left: 24px;
+    }
+    .toMounth {
+      position: absolute;
+      top: 5px;
+      left: 105px;
+    }
+    .verticalLine {
+      position: absolute;
+      display: block;
+      width: 2px;
+      height: 92%;
+      top: 8px;
+      right: 0;
+      background: #666;
+    }
+  }
+  .job-detail {
+    position: relative;
+    width: 75%;
+    .job {
+      position: relative;
+      top: 7px;
+      left: 15px;
+      font-size: 18px;
+    }
+    .position {
+      position: relative;
+      top: 7px;
+      left: 15px;
+      display: block;
+      font-size: 15px;
+      color: #666;
+    }
+    .responsibilities {
+      position: relative;
+      top: 14px;
+      left: 15px;
+      font-size: 15px;
+      display: block;
+    }
+    ul {
+      list-style-type: disc;
+      font-size: 15px;
+      position: relative;
+      top: 5px;
+      li {
+        padding: 2px 0;
+      }
+    }
+  }
+}

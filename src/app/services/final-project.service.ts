@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { ProjectCard } from '../models/contact-interface';
 import { Logo } from '../models/logo-interface';
-import { Titles, Title } from '../models/title-interface';
+import { Titles } from '../models/title-interface';
 import { EducationWork } from '../models/education-work-interface';
 
 const PROJECTS_API = 'http://localhost:3000/projects';
